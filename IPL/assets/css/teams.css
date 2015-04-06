@@ -1,0 +1,135 @@
+/*--------------------------------------- TEAMS SUB MENU ----------------------------------------*/
+
+
+.teamSubMenu {
+
+
+margin: 0;
+line-height: 33px;
+height: 86px;
+font-size: 16px;
+width: 100%;
+position: relative;
+z-index: 3;
+overflow: hidden;
+
+}
+
+.teamSubMenu ul{
+
+}
+
+.teamSubMenu li{
+float: left;
+padding-top: 10px;
+padding-left: 44px;
+}
+
+.teamSubMenu li a{
+background-image: url(../img/IPL_team.png);
+display: block;
+height: 65px;
+width: 65px;
+position: relative;	
+}
+
+
+.teamSubMenu li a:hover{
+opacity:0.5;
+}
+
+.teamSubMenu li.selected a:hover{
+opacity:1;
+}
+
+.teamSubMenu li a span{
+display: none;
+height: 2px;
+width: 50px;
+background-color: white;
+position: absolute;
+bottom: -1px;
+left: 7px;
+border-radius: 10px;
+-webkit-box-shadow: 0 0 4px 4px #94cbff;
+-moz-box-shadow: 0 0 4px 4px #94cbff;
+box-shadow: 0 0 4px 4px #94cbff;
+text-indent:-99999px;
+}
+
+.teamSubMenu li.selected a span{
+display:block;
+}
+
+.teamSub {
+margin: 0;
+line-height: 33px;
+height: 86px;
+font-size: 16px;
+width: 100%;
+position: relative;
+z-index: 3;
+overflow: hidden;
+}
+
+.teamSub li{
+float: left;
+padding-top: 10px;
+padding-bottom:10px;
+padding-left: 6px;
+}
+
+.teamSub li a{
+background-image: url(../img/IPL_team.png);
+display: block;
+height: 65px;
+width: 65px;
+position: relative;	
+}
+
+
+.teamSub li a:hover{
+opacity:0.8;
+}
+
+.teamSub li.selected a:hover{
+opacity:1;
+}
+
+.teamSub li a span{
+display: none;
+height: 2px;
+width: 50px;
+background-color: white;
+position: absolute;
+bottom: -1px;
+left: 7px;
+border-radius: 10px;
+-webkit-box-shadow: 0 0 4px 4px #94cbff;
+-moz-box-shadow: 0 0 4px 4px #94cbff;
+box-shadow: 0 0 4px 4px #94cbff;
+text-indent:-99999px;
+}
+
+.teamSubMenu li.CSK a{ background-position: 0 0; width: 65px; height: 65px;} 
+.teamSubMenu li.DD a{ background-position: 0 -134px; width: 65px; height: 65px;} 
+.teamSubMenu li.KKR a{ background-position: 0 -201px; width: 65px; height: 65px;} 
+.teamSubMenu li.KXIP a{ background-position: 0 -268px; width: 65px; height: 65px;} 
+.teamSubMenu li.MI a{ background-position: 0 -335px; width: 65px; height: 65px;} 
+.teamSubMenu li.PWI a{ background-position: 0 -402px; width: 65px; height: 65px;} 
+.teamSubMenu li.RCB a{ background-position: 0 -469px; width: 65px; height: 65px;} 
+.teamSubMenu li.RR a{background-position: 0 -536px; width: 65px; height: 65px;}
+.teamSubMenu li.SH a{background-position: 0 -605px; width: 65px; height: 65px; }  
+
+
+.teamSub li.CSK a{ background-position: 0 0; width: 65px; height: 65px;} 
+.teamSub li.DD a{ background-position: 0 -134px; width: 65px; height: 65px;} 
+.teamSub li.KKR a{ background-position: 0 -201px; width: 65px; height: 65px;} 
+.teamSub li.KXIP a{ background-position: 0 -268px; width: 65px; height: 65px;} 
+.teamSub li.MI a{ background-position: 0 -335px; width: 65px; height: 65px;} 
+.teamSub li.PWI a{ background-position: 0 -402px; width: 65px; height: 65px;} 
+.teamSub li.RCB a{ background-position: 0 -469px; width: 65px; height: 65px;} 
+.teamSub li.RR a{background-position: 0 -536px; width: 65px; height: 65px;}
+.teamSub li.SH a{background-position: 0 -605px; width: 65px; height: 65px; }  
+
+

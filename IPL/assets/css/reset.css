@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+	background-color: #ECECEC;
+	background-repeat:repeat;
+	color: #333333;
+	background-image: url(../img/footer-bg-texture.jpg);
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, a {  
+	margin: 0px 0px 0px 0px; 
+	padding: 0px 0px 0px 0px; 
+}
+h1, h2, h3, h4, h5, h6 { 
+font-family: 'Open Sans', sans-serif;
+}
+
+.test h3 {
+	font-family: 'Maven Pro', sans-serif;
+}
+dt {
+	font-size: 12px;
+	color: #333333;
+}
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0px;
+} 
+fieldset, img {  
+	border: 0px; 
+} 
+address, caption, cite, code, dfn, th, var { 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+ol, ul, li { 
+	list-style: none;
+}
+li {
+	margin-bottom: 0px;
+}
+caption, th { 
+ text-align: left; 
+} 
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+abbr, acronym {
+	border: 0px;
+}
+legend {
+	display: none;
+}
+
+a {
+color: #3B579B;
+text-decoration: none;
+cursor:pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+a:focus {
+}
+hr {
+	display: none;
+}
+p, address {
+
+
+}
+.cl{
+clear:both;
+}
+
+.textRight{
+text-align:right;
+}
+
+.off, .turnedOff, .hidden{
+display:none;
+}

@@ -1,0 +1,1568 @@
+/* Import Styles */
+/* Mixins */
+.globalSprite {
+  background-image: url('../i/sprites/IPL-global-sprite.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .globalSprite {
+    background-image: url(../i/sprites/IPL-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+.mcGlobalSprite {
+  background-image: url('../i/match-center/IPL-mc-global-sprite.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .mcGlobalSprite {
+    background-image: url(../i/match-center/IPL-mc-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+}
+/* Responsive */
+.unitCntr {
+  clear: both;
+}
+.row {
+  max-width: 980px;
+  padding: 0 20px;
+  clear: both;
+  margin: 0 auto;
+  zoom: 1;
+  position: relative;
+}
+.row:before {
+  content: '';
+  display: block;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.row .unitCntr {
+  padding: 0;
+}
+.row .column {
+  float: left;
+}
+.row .column.two-thirds {
+  width: 65%;
+}
+.row .column.one-third {
+  width: 33%;
+  float: right;
+}
+@media (max-width: 800px) {
+  .row {
+    margin: 0 20px;
+    padding: 0;
+  }
+  .row .column {
+    float: none;
+  }
+  .row .column.two-thirds {
+    width: 100%;
+  }
+  .row .column.one-third {
+    width: 100%;
+    float: none;
+  }
+}
+/* Colours */
+/* Match Center Colours */
+/* Team Colours */
+/* Elements */
+/* Sub Nav */
+.subNav {
+  background: #fff;
+  position: relative;
+  clear: both;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+.subNav .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 44px;
+  width: 44px;
+  background: #5191cd;
+  color: #fff;
+  line-height: 44px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+}
+.subNav .button span {
+  background-image: url('../i/sprites/IPL-global-sprite.png');
+  background-position: -280px -10px;
+  width: 12px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -6px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .subNav .button span {
+    background-image: url(../i/sprites/IPL-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+.subNav .current {
+  display: none;
+}
+.subNav ul {
+  width: 100%;
+  display: table;
+}
+.subNav ul li {
+  display: table-cell;
+  text-align: center;
+}
+.subNav ul li a {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+}
+.subNav ul li a:hover {
+  background: #1c1d22;
+  color: #fff;
+}
+.subNav ul li.active {
+  background: #fff;
+}
+.subNav ul li.active a {
+  background: #5191cd;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .subNav .button {
+    display: block;
+  }
+  .subNav .current {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 15px;
+    display: block;
+    font-weight: 700;
+  }
+  .subNav ul {
+    display: none;
+  }
+  .subNav ul.open {
+    display: block;
+  }
+  .subNav ul li {
+    display: block;
+  }
+  .subNav ul li a {
+    padding: 0 15px;
+    text-align: left;
+  }
+  .subNav ul li:hover {
+    background: #1c1d22;
+  }
+  .subNav ul li:hover a {
+    color: #fff;
+  }
+  .subNav ul li.active {
+    display: none!important;
+  }
+  .subNav ul li.active a {
+    background: #fff;
+    color: #333;
+  }
+}
+/* Play Icon */
+.playIcon {
+  background: #1694f0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.playIcon .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 16px;
+  width: 13px;
+  margin: -9px 0 0 -6px;
+  background-image: url('../i/sprites/IPL-global-sprite.png');
+  background-position: -100px -60px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .playIcon .icon {
+    background-image: url(../i/sprites/IPL-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+/* Player Auctions */
+.playerAuction {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  zoom: 1;
+  /*--------------------------------------- PLAYER AUCTION ----------------------------------------*/
+
+}
+.playerAuction:before {
+  content: '';
+  display: block;
+}
+.playerAuction:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.playerAuction .mainHeader {
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+}
+.playerAuction .mainHeader h1 {
+  float: left;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: normal;
+}
+.playerAuction .mainHeader .share {
+  margin-top: 5px;
+  float: right;
+}
+.playerAuction .mainHeader .share .tweet {
+  float: right;
+  margin-right: 0;
+  width: 59px;
+  overflow: hidden;
+}
+.playerAuction .mainHeader .share .like {
+  float: right;
+  margin-right: 10px;
+  width: 95px;
+  overflow: hidden;
+}
+.playerAuction .auctionHighlights {
+  background: #1c1d22;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.playerAuction .auctionHighlights header {
+  color: #fff;
+  padding-top: 10px;
+  float: right;
+  width: 50%;
+}
+.playerAuction .auctionHighlights header h3 {
+  font-size: 16px;
+  padding: 0 10px;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: normal;
+}
+.playerAuction .auctionHighlights header .date {
+  color: #ababab;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+.playerAuction .auctionHighlights header p {
+  padding: 0 10px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+.playerAuction .auctionHighlights .playerContainer {
+  float: left;
+  width: 50%;
+}
+.playerAuction .auctionHighlights .playerContainer img {
+  width: 100%;
+}
+.playerAuction .auctionHighlights .playerContainer .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+
+  padding-top: 25px;
+  height: 0;
+}
+.playerAuction .auctionHighlights .playerContainer .videoWrapper object,
+.playerAuction .auctionHighlights .playerContainer .videoWrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.playerAuction .auctionHighlights .playerContainer figure {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.playerAuction .auctionHighlights .playerContainer video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+.playerAuction .auctionHighlights .share {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  margin: 0px;
+}
+.playerAuction .auctionHighlights .share .tweet {
+  float: right;
+  margin-right: 10px;
+}
+.playerAuction .auctionHighlights .share .like {
+  float: right;
+  margin-right: 10px;
+  width: 95px;
+  overflow: hidden;
+}
+.playerAuction .auctionSummary {
+  font-size: 13px;
+  margin-bottom: 10px;
+  clear: both;
+}
+.playerAuction .auctionSummary h4 {
+  font-weight: 700;
+  margin: 0 10px 5px;
+}
+.playerAuction .auctionSummary .summaryItem {
+  background: #f0f0f0;
+  zoom: 1;
+}
+.playerAuction .auctionSummary .summaryItem:before {
+  content: '';
+  display: block;
+}
+.playerAuction .auctionSummary .summaryItem:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.playerAuction .auctionSummary .summaryItem.justSold {
+  position: relative;
+  background: #1c1d22;
+  color: #fff;
+  font-weight: 700;
+}
+.playerAuction .auctionSummary .summaryItem.justSold span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  background: #d20003;
+  line-height: 34px;
+  padding: 0 10px;
+}
+.playerAuction .auctionSummary .summaryItem.justSold .tweet {
+  float: right;
+  margin: 7px 10px 0 0;
+  width: 59px;
+  overflow: hidden;
+}
+.playerAuction .auctionSummary .summaryItem p {
+  float: left;
+  padding: 8px 10px;
+  padding-left: 84px;
+}
+.playerAuction .auctionSummary .more {
+  background: #f0f0f0;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.playerAuction .auctionSummary .more span {
+  background-image: url('../i/sprites/IPL-global-sprite.png');
+  background-position: -280px 0;
+  width: 12px;
+  height: 6px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-left: 5px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .playerAuction .auctionSummary .more span {
+    background-image: url(../i/sprites/IPL-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+.playerAuction .auctionSummary .more:hover {
+  background: #d7d7d7;
+}
+.playerAuction .auctionPhotostreamWidget {
+  margin-bottom: 20px;
+}
+.playerAuction .auctionPhotostreamWidget h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.playerAuction .auctionPhotostreamWidget h4 a {
+  color: #333;
+}
+.playerAuction .auctionPhotostreamWidget h4 a:hover {
+  color: #3B579B;
+}
+.playerAuction .auctionPhotostreamWidget .photos {
+  text-align: justify;
+}
+.playerAuction .auctionPhotostreamWidget .photos:after {
+  content: '';
+  width: 100%;
+  /* Ensures there are at least 2 lines of text, so justification works */
+
+  display: inline-block;
+}
+.playerAuction .auctionPhotostreamWidget .photos li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  width: 24%;
+}
+.playerAuction .auctionPhotostreamWidget .photos li a {
+  display: block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-top: 66%;
+}
+.playerAuction .auctionPhotostreamWidget .photos li a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.playerAuction .auctionPhotostreamWidget .photos li:hover {
+  opacity: 0.7;
+}
+@media (max-width: 800px) {
+  .playerAuction .auctionPhotostreamWidget {
+    display: none;
+  }
+}
+.playerAuction .unitCntr .unitSubMenu li a {
+  padding: 0 20px;
+}
+.playerAuction .playerAuctionCentralContent {
+  padding: 10px 10px 0;
+}
+.playerAuction .playerAuctionCentralContent .unitHeader {
+  margin-bottom: 0px;
+  border-bottom: 0;
+  background: #fff;
+}
+.playerAuction .playerAuctionCentralContent .unitHeader h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+.playerAuction .tableCntr {
+  padding: 0 0 15px;
+  overflow-x: auto;
+}
+.playerAuction .tableCntr .tLogo16x30 {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.playerAuction h5 {
+  text-align: center;
+  font-weight: normal;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.playerAuction .archiveSelector {
+  padding: 0 0 15px;
+}
+.playerAuction .archiveSelector select {
+  margin: 0;
+  width: 150px;
+}
+.playerAuction table {
+  width:100%;
+  font-size:16px;
+  line-height:24px;
+  table-layout:fixed;
+}
+
+.playerAuction table a {
+  color: #333;
+  font-weight: bold;
+}
+.playerAuction tr {
+  background-color: #F0F0F0;
+}
+.playerAuction td {
+  padding: 0 3px;
+  overflow: hidden;
+  max-width:350px;
+ 
+  border-bottom: 1px solid white;
+  text-align: right;
+  font-size: 12px;
+  
+  
+  white-space: nowrap;
+
+}
+.playerAuction tr.header td,
+.playerAuction tr.header:hover {
+  background-color: #5191CD;
+  color: #fff;
+}
+.playerAuction td.first {
+  text-align: left;
+  padding-left: 10px;
+}
+.playerAuction td.team {
+  text-align: left;
+}
+.playerAuction td.player,
+.playerAuction td.type {
+  text-align: left;
+}
+.playerAuction td.last {
+  padding-right: 10px;
+}
+.playerAuction p.rules {
+  text-align: right;
+  font-size: 12px;
+  color: gray;
+  padding: 8px 0 0 0px;
+}
+.playerAuction p.rules span {
+  display: inline-block;
+  padding-left: 10px;
+}
+@media (max-width: 760px) {
+  .playerAuction .tableCntr.responsive,
+  .playerAuction .tableCntr.franchisesList,
+  .playerAuction .tableCntr.topBuysList {
+    /* Force table to not be like tables anymore */
+  
+    /* Hide table headers (but not display: none;, for accessibility) */
+  
+    /*
+  		Label the data
+  		*/
+  
+  }
+  .playerAuction .tableCntr.responsive table,
+  .playerAuction .tableCntr.franchisesList table,
+  .playerAuction .tableCntr.topBuysList table,
+  .playerAuction .tableCntr.responsive thead,
+  .playerAuction .tableCntr.franchisesList thead,
+  .playerAuction .tableCntr.topBuysList thead,
+  .playerAuction .tableCntr.responsive tbody,
+  .playerAuction .tableCntr.franchisesList tbody,
+  .playerAuction .tableCntr.topBuysList tbody,
+  .playerAuction .tableCntr.responsive th,
+  .playerAuction .tableCntr.franchisesList th,
+  .playerAuction .tableCntr.topBuysList th,
+  .playerAuction .tableCntr.responsive td,
+  .playerAuction .tableCntr.franchisesList td,
+  .playerAuction .tableCntr.topBuysList td,
+  .playerAuction .tableCntr.responsive tr,
+  .playerAuction .tableCntr.franchisesList tr,
+  .playerAuction .tableCntr.topBuysList tr {
+    display: block;
+    background: transparent;
+  }
+  .playerAuction .tableCntr.responsive table,
+  .playerAuction .tableCntr.franchisesList table,
+  .playerAuction .tableCntr.topBuysList table {
+    background: #f0f0f0;
+  }
+  .playerAuction .tableCntr.responsive thead tr,
+  .playerAuction .tableCntr.franchisesList thead tr,
+  .playerAuction .tableCntr.topBuysList thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .playerAuction .tableCntr.responsive td,
+  .playerAuction .tableCntr.franchisesList td,
+  .playerAuction .tableCntr.topBuysList td {
+    /* Behave  like a "row" */
+  
+    border: none;
+    position: relative;
+    padding: 20px 10px 5px;
+    text-align: left;
+    font-size: 14px;
+  }
+  .playerAuction .tableCntr.responsive td.first,
+  .playerAuction .tableCntr.franchisesList td.first,
+  .playerAuction .tableCntr.topBuysList td.first {
+    padding: 5px 10px;
+    background: #5191cd;
+    border-top: 10px solid #fff;
+  }
+  .playerAuction .tableCntr.responsive td.first a,
+  .playerAuction .tableCntr.franchisesList td.first a,
+  .playerAuction .tableCntr.topBuysList td.first a {
+    color: #fff;
+  }
+  .playerAuction .tableCntr.responsive td:nth-of-type(2),
+  .playerAuction .tableCntr.franchisesList td:nth-of-type(2),
+  .playerAuction .tableCntr.topBuysList td:nth-of-type(2) {
+    padding-top: 30px;
+  }
+  .playerAuction .tableCntr.responsive td:nth-of-type(2):before,
+  .playerAuction .tableCntr.franchisesList td:nth-of-type(2):before,
+  .playerAuction .tableCntr.topBuysList td:nth-of-type(2):before {
+    padding-top: 10px;
+  }
+  .playerAuction .tableCntr.responsive td:before,
+  .playerAuction .tableCntr.franchisesList td:before,
+  .playerAuction .tableCntr.topBuysList td:before {
+    /* Now like a table header */
+  
+    position: absolute;
+    /* Top/left values mimic padding */
+  
+    top: 0px;
+    left: 0px;
+    right: 0;
+    padding: 0px 10px 0;
+    white-space: nowrap;
+    font-weight: 700;
+  }
+  .playerAuction .tableCntr.responsive tr:first-child td.first,
+  .playerAuction .tableCntr.franchisesList tr:first-child td.first,
+  .playerAuction .tableCntr.topBuysList tr:first-child td.first {
+    border-top: 0;
+  }
+  .playerAuction .tableCntr.responsive.franchisesList td:nth-of-type(2):before,
+  .playerAuction .tableCntr.franchisesList.franchisesList td:nth-of-type(2):before,
+  .playerAuction .tableCntr.topBuysList.franchisesList td:nth-of-type(2):before {
+    content: "Funds Remaining";
+  }
+  .playerAuction .tableCntr.responsive.franchisesList td:nth-of-type(3):before,
+  .playerAuction .tableCntr.franchisesList.franchisesList td:nth-of-type(3):before,
+  .playerAuction .tableCntr.topBuysList.franchisesList td:nth-of-type(3):before {
+    content: "Right To Match";
+  }
+  .playerAuction .tableCntr.responsive.franchisesList td:nth-of-type(4):before,
+  .playerAuction .tableCntr.franchisesList.franchisesList td:nth-of-type(4):before,
+  .playerAuction .tableCntr.topBuysList.franchisesList td:nth-of-type(4):before {
+    content: "Overseas Players";
+  }
+  .playerAuction .tableCntr.responsive.franchisesList td:nth-of-type(5):before,
+  .playerAuction .tableCntr.franchisesList.franchisesList td:nth-of-type(5):before,
+  .playerAuction .tableCntr.topBuysList.franchisesList td:nth-of-type(5):before {
+    content: "Total Players";
+  }
+  .playerAuction .tableCntr.responsive.topBuysList td:nth-of-type(2):before,
+  .playerAuction .tableCntr.franchisesList.topBuysList td:nth-of-type(2):before,
+  .playerAuction .tableCntr.topBuysList.topBuysList td:nth-of-type(2):before {
+    content: "Player";
+  }
+  .playerAuction .tableCntr.responsive.topBuysList td:nth-of-type(3):before,
+  .playerAuction .tableCntr.franchisesList.topBuysList td:nth-of-type(3):before,
+  .playerAuction .tableCntr.topBuysList.topBuysList td:nth-of-type(3):before {
+    content: "Type";
+  }
+  .playerAuction .tableCntr.responsive.topBuysList td:nth-of-type(4):before,
+  .playerAuction .tableCntr.franchisesList.topBuysList td:nth-of-type(4):before,
+  .playerAuction .tableCntr.topBuysList.topBuysList td:nth-of-type(4):before {
+    content: "Price";
+  }
+}
+.playerAuction .column.one-third {
+  position: absolute;
+  top: 43px;
+  right: 20px;
+  bottom: 134px;
+  width: 32%;
+}
+.playerAuction .column.one-third .auctionTweets .unitCntr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.playerAuction .column.one-third .auctionTweets .unitCntr .social320 {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.playerAuction .column.one-third .auctionTweets .unitCntr .social320 .tweetsCntr.small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.playerAuction .column.one-third .auctionTweets .unitCntr .social320 .tweetsCntr.small #tweets {
+  max-height: none;
+  position: absolute;
+  top: 84px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 1000px) {
+  .playerAuction .column.one-third {
+    position: static;
+    width: 33%;
+  }
+  .playerAuction .column.one-third .auctionTweets .unitCntr {
+    position: static;
+  }
+  .playerAuction .column.one-third .auctionTweets .unitCntr .social320 {
+    position: static;
+  }
+  .playerAuction .column.one-third .auctionTweets .unitCntr .social320 .tweetsCntr.small {
+    position: static;
+  }
+  .playerAuction .column.one-third .auctionTweets .unitCntr .social320 .tweetsCntr.small #tweets {
+    position: static;
+  }
+}
+.playerAuction .auctionTweets .unitHeader {
+  height: 34px;
+  line-height: 34px;
+}
+.playerAuction .auctionTweets .unitHeader span {
+  background-image: url('../i/sprites/IPL-global-sprite.png');
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background-position: -220px -50px;
+  width: 23px;
+  height: 19px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+  float: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .playerAuction .auctionTweets .unitHeader span {
+    background-image: url(../i/sprites/IPL-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+.playerAuction .auctionTweets .unitHeader h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.playerAuction .auctionTweets .tweetCounter {
+  background: #5191ce;
+  padding: 5px 10px;
+  font-size: 38px;
+  line-height: 38px;
+  color: #fff;
+}
+.playerAuction .auctionTweets .tweetCounter .count {
+  float: left;
+}
+.playerAuction .auctionTweets .tweetCounter span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.playerAuction .auctionTweets .followBar {
+  background: #f0f0f0;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 7px 10px;
+  zoom: 1;
+}
+.playerAuction .auctionTweets .followBar:before {
+  content: '';
+  display: block;
+}
+.playerAuction .auctionTweets .followBar:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.playerAuction .auctionTweets .followBar .btn {
+  float: right;
+  margin-left: 10px;
+}
+.playerAuction .social320 .tweetsCntr.small {
+  height: auto;
+  padding: 0;
+  overflow: visible;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets {
+  max-height: 527px;
+  overflow: auto;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li {
+  padding: 10px;
+  padding-bottom: 35px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li .avatar {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li .body {
+  margin-left: 0;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li .body .time {
+  display: block;
+  position: relative;
+  top: 8px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li .body .intents {
+  display: block;
+  top: auto;
+  bottom: 10px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li .body .fullName {
+  padding-top: 5px;
+  display: block;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li .body p {
+  clear: both;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li:first-child {
+  padding-bottom: 30px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li:first-child .avatar {
+  display: none;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li:first-child .fullName {
+  font-size: 16px;
+  float: left;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li:first-child .body {
+  font-size: 16px;
+  margin-left: 0;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li:first-child .body .intents {
+  display: block;
+  top: auto;
+  bottom: 10px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li:first-child .body .time {
+  display: block!important;
+  top: 5px;
+}
+.playerAuction .social320 .tweetsCntr.small #tweets li:first-child .body .fullName {
+  padding-top: 0;
+}
+@media (max-width: 600px) {
+  .playerAuction td.type {
+    display: none;
+  }
+  .playerAuction .mainHeader {
+    margin-top: 15px;
+  }
+  .playerAuction .mainHeader h1 {
+    width: 100%;
+  }
+  .playerAuction .mainHeader .share {
+    margin-top: 10px;
+    float: left;
+  }
+  .playerAuction .mainHeader .share .tweet {
+    margin-right: 10px;
+  }
+  .playerAuction .auctionHighlights header {
+    float: left;
+    width: 100%;
+  }
+  .playerAuction .auctionHighlights header p {
+    padding-bottom: 10px;
+  }
+  .playerAuction .auctionHighlights .playerContainer {
+    width: 100%;
+  }
+  .playerAuction .auctionHighlights .playerContainer img {
+    width: 100%;
+  }
+  .playerAuction .auctionHighlights .share {
+    float: left;
+    margin: 10px;
+    position: static;
+  }
+  .playerAuction .auctionSummary .summaryItem.justSold span {
+    position: static;
+    padding: 0 10px;
+  }
+  .playerAuction .auctionSummary .summaryItem.justSold p {
+    padding-left: 10px;
+  }
+  .playerAuction .auctionSummary .summaryItem.justSold .tweet {
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  .playerAuction .auctionPhotostreamWidget {
+    margin-bottom: 10px;
+    display: none!important;
+  }
+  .playerAuction .auctionPhotostreamWidget .photos {
+    text-align: justify;
+    width: 100%;
+  }
+  .playerAuction .auctionPhotostreamWidget .photos:after {
+    display: none;
+  }
+  .playerAuction .auctionPhotostreamWidget .photos li {
+    display: none;
+    width: 100%;
+  }
+  .playerAuction .auctionPhotostreamWidget .photos li.first {
+    display: block;
+  }
+}
+@media (min-width: 800px) {
+  .playerAuction .auctionTweets .unitHeader h1 {
+    padding-left: 0;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets {
+    max-height: 500px;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets li {
+    padding-bottom: 10px;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets li .body .time {
+    display: block;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets li .body .intents {
+    display: none;
+    top: 16px;
+    bottom: auto;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets li:hover .body .time {
+    display: none;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets li:hover .body .intents {
+    display: block;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets li:first-child {
+    padding-bottom: 30px;
+  }
+  .playerAuction .social320 .tweetsCntr.small #tweets li:first-child .body .intents {
+    display: block;
+    top: auto;
+    bottom: 10px;
+  }
+}
+/*---------------------------------------- SOCIAL: Mirror -------------------------------------------*/
+.cheerMirror {
+  height: 100%;
+  margin-bottom: -15px;
+  background-color: #fff;
+  background-image: url(../i/element-bgs/cheer-wall.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 230px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .cheerMirror {
+    background-image: url(../i/element-bgs/twitter-mirror@x2.jpg);
+    background-size: 55px 55px;
+  }
+}
+.mirrorMasthead {
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px 0 10px 0;
+}
+.mirrorMasthead .tweet {
+  font-size: 40px;
+  line-height: 65px;
+  font-weight: bold;
+  color: #333;
+  padding-left: 20px;
+  float: left;
+}
+.mirrorMasthead .follow {
+  float: right;
+  margin-top: 23px;
+  margin-right: 10px;
+}
+@media (max-width: 980px) {
+  .mirrorMasthead {
+    width: auto;
+    margin: auto;
+    padding: 30px 10px 10px 10px;
+  }
+}
+@media (max-width: 560px) {
+  .mirrorMasthead .tweet {
+    font-size: 30px;
+  }
+  .mirrorMasthead .follow {
+    margin-top: 19px;
+  }
+}
+@media (max-width: 430px) {
+  .mirrorMasthead .tweet {
+    line-height: 28px;
+    float: none;
+    padding-left: 75px;
+  }
+  .mirrorMasthead .follow {
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .mirrorMasthead .tweet {
+    font-size: 20px;
+  }
+}
+#cheerCards {
+  /*width: 980px;*/
+
+  /*width: 95%;*/
+
+  width: auto;
+  margin: 20px auto;
+}
+#cheerCards .card {
+  float: left;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  -webkit-transition: left 0.4s ease-in-out, top 0.4s ease-in-out 0.4s, -webkit-transform 0.2s ease-in-out 0s;
+  -moz-transition: left 0.4s ease-in-out, top 0.4s ease-in-out 0.4s, transform 0.2s ease-in-out 0.4s;
+  -ms-transition: left 0.4s ease-in-out, top 0.4s ease-in-out 0.4s, transform 0.2s ease-in-out 0.4s;
+  -o-transition: left 0.4s ease-in-out, top 0.4s ease-in-out 0.4s, transform 0.2s ease-in-out 0.4s;
+  transition: left 0.4s ease-in-out, top 0.4s ease-in-out 0.4s, transform 0.2s ease-in-out 0s;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+#cheerCards .card .cardContent {
+  display: block;
+  width: 230px;
+  padding: 10px;
+  padding: 0;
+  text-decoration: none;
+  background-color: #fff;
+}
+#cheerCards .card img.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4 linear;
+  -webkit-transition: opacity 0.4 linear;
+}
+#cheerCards .cardContent:hover img.photo {
+  opacity: 0.8;
+}
+#cheerCards .card .tweetInfo {
+  max-height: 0px;
+  overflow: hidden;
+}
+#cheerCards .card .tweetInfo .handle {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 10px 5px;
+}
+#cheerCards .card p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  padding: 0 10px 10px;
+}
+#cheerCards .card .time {
+  float: left;
+  display: block;
+  font: 11px arial, sans-serif;
+  color: #808080;
+  line-height: 13px;
+  margin-top: 2px;
+}
+#cheerCards .card .time i {
+  height: 11px;
+  width: 13px;
+  display: block;
+  float: left;
+  background-color: transparent;
+  background-image: url(../i/sprites/twitter-sprite.png);
+  background-repeat: no-repeat;
+  background-position: -132px -3px;
+  text-indent: -99999px;
+  margin-right: 3px;
+}
+#cheerCards .card .intents {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10px;
+  height: 14px;
+  bottom: 0;
+  padding: 10px;
+}
+#cheerCards .card .intents .icons {
+  float: right;
+}
+#cheerCards .card .intents a {
+  background-image: url(../i/sprites/twitter-sprite-large.png);
+  width: 16px;
+  height: 16px;
+  float: left;
+  display: block;
+  margin-left: 10px;
+  text-indent: -99999px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  #cheerCards .card .intents a {
+    background-image: url(../i/sprites/twitter-sprite-large@x2.png);
+    background-size: 49px 51px;
+  }
+}
+#cheerCards .card .intents a.reply {
+  width: 18px;
+  height: 13px;
+  margin-top: 1px;
+  background-position: 0 0;
+}
+#cheerCards .card .intents a.reply:hover {
+  background-position: -23px 0;
+}
+#cheerCards .card .intents a.retweet {
+  width: 22px;
+  height: 12px;
+  margin-top: 2px;
+  background-position: 0 -18px;
+}
+#cheerCards .card .intents a.retweet:hover {
+  background-position: -27px -18px;
+}
+#cheerCards .card .intents a.favourite {
+  width: 18px;
+  height: 14px;
+  background-position: 0 -37px;
+}
+#cheerCards .card .intents a.favourite:hover {
+  background-position: -21px -37px;
+}
+#cheerCards .card:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  z-index: 100;
+  transition-delay: 0;
+}
+#cheerCards .card:hover .tweetInfo {
+  max-height: 200px;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition-delay: .2s;
+}
+/* Twitter List */
+.twitterListResponsive .social320 .tweetsCntr.small {
+  height: auto;
+  padding: 0;
+  overflow: visible;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .unitHeader {
+  height: 34px;
+  line-height: 34px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .unitHeader span {
+  background-image: url('../i/sprites/IPL-global-sprite.png');
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background-position: -220px -50px;
+  width: 23px;
+  height: 19px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .twitterListResponsive .social320 .tweetsCntr.small .unitHeader span {
+    background-image: url(../i/sprites/IPL-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+.twitterListResponsive .social320 .tweetsCntr.small .unitHeader h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .tweetCounter {
+  background: #5191ce;
+  padding: 5px 10px 0px;
+  font-size: 38px;
+  line-height: 38px;
+  color: #fff;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .tweetCounter .count {
+  float: left;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .tweetCounter span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .followBar {
+  background: #f0f0f0;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 7px 10px;
+  zoom: 1;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .followBar:before {
+  content: '';
+  display: block;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .followBar:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.twitterListResponsive .social320 .tweetsCntr.small .followBar .btn {
+  float: right;
+  margin-left: 10px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets {
+  max-height: 527px;
+  overflow: auto;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li {
+  padding: 10px;
+  padding-bottom: 35px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li .avatar {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li .body {
+  margin-left: 0;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li .body .time {
+  display: block;
+  position: relative;
+  top: 8px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li .body .intents {
+  display: none;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li .body .fullName {
+  padding-top: 5px;
+  display: block;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li .body p {
+  clear: both;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child {
+  padding-bottom: 30px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child .avatar {
+  display: none;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child .fullName {
+  font-size: 16px;
+  float: left;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child .body {
+  font-size: 16px;
+  margin-left: 0;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child .body .intents {
+  display: block;
+  top: auto;
+  bottom: 10px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child .body .time {
+  display: block!important;
+  top: 5px;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child .body .fullName {
+  padding-top: 0;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:hover .body .time {
+  display: none;
+}
+.twitterListResponsive .social320 .tweetsCntr.small #tweets li:hover .body .intents {
+  display: block;
+}
+@media (max-width: 800px) {
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li {
+    padding-bottom: 10px;
+  }
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li .body {
+    padding-bottom: 30px;
+  }
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li .body .time {
+    display: block;
+  }
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li .body .intents {
+    display: block;
+    top: auto;
+    bottom: 10px;
+  }
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li:hover .body .time {
+    display: block;
+  }
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li:hover .body .intents {
+    display: block;
+  }
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child {
+    padding-bottom: 30px;
+  }
+  .twitterListResponsive .social320 .tweetsCntr.small #tweets li:first-child .body .intents {
+    display: block;
+    top: auto;
+    bottom: 10px;
+  }
+}
+/* Caption Contest */
+.captionContest {
+  padding-top: 20px;
+}
+.captionContest .mainHeader {
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+}
+.captionContest .mainHeader h1 {
+  float: left;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: normal;
+}
+.captionContest .mainHeader .share {
+  float: right;
+}
+.captionContest .mainHeader .share .tweet {
+  float: right;
+  margin-right: 10px;
+}
+.captionContest .mainHeader .share .like {
+  float: right;
+  margin-right: 10px;
+  width: 95px;
+  overflow: hidden;
+}
+.captionContest .captionOverview {
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  background: #fff;
+  padding: 10px;
+  zoom: 1;
+  clear: both;
+  margin-bottom: 20px;
+  position: relative;
+}
+.captionContest .captionOverview:before {
+  content: '';
+  display: block;
+}
+.captionContest .captionOverview:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.captionContest .captionOverview .summary {
+  float: left;
+  width: 50%;
+}
+.captionContest .captionOverview .summary h5 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-right: 20px;
+}
+.captionContest .captionOverview .summary p {
+  font-size: 1.2em;
+  padding-right: 20px;
+}
+.captionContest .captionOverview .date {
+  float: left;
+  width: 50%;
+}
+.captionContest .captionOverview .currentWeek {
+  background: #5191cd;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.captionContest .captionOverview .currentWeek h3 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+.captionContest .captionOverview .currentWeek .week {
+  font-size: 1.2em;
+}
+.captionContest .captionOverview .nav a {
+  display: block;
+  background: #f0f0f0;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  width: 48%;
+  float: left;
+}
+.captionContest .captionOverview .nav a.next {
+  float: right;
+}
+.captionContest .captionOverview .nav a:hover {
+  text-decoration: none;
+  background: #d7d7d7;
+}
+.captionContest .captionOverview .nav a.inactive {
+  opacity: 0.8;
+  cursor: default;
+  background: #f0f0f0 !important;
+}
+.captionContest .videoList li {
+  margin-bottom: 20px;
+}
+.captionContest .videoList li:last-child {
+  margin-bottom: 0;
+}
+.captionContest .videoList li .unitCntr .unitHeader {
+  height: auto;
+  line-height: none;
+  padding: 5px 10px;
+}
+.captionContest .videoList li .unitCntr .unitHeader h1 {
+  float: none;
+  font-size: 1.6em;
+  padding: 0;
+}
+.captionContest .videoList li .unitCntr .unitHeader h1 span {
+  font-weight: 700;
+}
+.captionContest .videoList li .captionContent {
+  zoom: 1;
+  position: relative;
+}
+.captionContest .videoList li .captionContent:before {
+  content: '';
+  display: block;
+}
+.captionContest .videoList li .captionContent:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.captionContest .videoList li .captionContent .playerContainer {
+  float: left;
+  width: 60%;
+  display: block;
+}
+.captionContest .videoList li .captionContent .playerContainer a {
+  display: block;
+  margin: 10px;
+  position: relative;
+}
+.captionContest .videoList li .captionContent .playerContainer a img {
+  display: block;
+  width: 100%;
+}
+.captionContest .videoList li .captionContent .tweetContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 60%;
+}
+.captionContest .videoList li .captionContent .tweetContainer textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  bottom: 44px;
+  left: 0;
+  background: #f2f2f2;
+  border: 1px solid #d8d7d7;
+  color: #898989;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Open Sans', arial;
+}
+.captionContest .videoList li .captionContent .tweetContainer a {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  background: #5191cd;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
+  height: 34px;
+  font-size: 1.4em;
+  line-height: 34px;
+}
+.captionContest .videoList li .captionContent .tweetContainer a span {
+  background-image: url('../i/sprites/IPL-global-sprite.png');
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background-position: -280px -25px;
+  width: 19px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .captionContest .videoList li .captionContent .tweetContainer a span {
+    background-image: url(../i/sprites/IPL-global-sprite@x2.png);
+    background-size: 500px 300px;
+  }
+}
+.captionContest .videoList li .captionContent .tweetContainer a:hover {
+  text-decoration: none;
+  background: #3478b7;
+}
+.captionContest .videoList li .captionContent .caption {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  bottom: 44px;
+  left: 0;
+  background: #f2f2f2;
+  border: 1px solid #d8d7d7;
+  color: #333;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Open Sans', arial;
+}
+.captionContest .videoList li .captionContent .caption span {
+  font-size: 1.2em;
+}
+.captionContest .videoList li .captionContent .caption p {
+  font-size: 1.4em;
+  font-weight: 700;
+}

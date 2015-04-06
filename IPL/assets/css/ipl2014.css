@@ -1,0 +1,231 @@
+.row {
+  max-width: 980px;
+  padding: 0 20px;
+  clear: both;
+  margin: 0 auto;
+  zoom: 1;
+  position: relative;
+}
+.row:before {
+  content: '';
+  display: block;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.row .unitCntr {
+  padding: 0;
+}
+.row .column {
+  float: left;
+}
+.row .column.two-thirds {
+  width: 65%;
+}
+.row .column.one-third {
+  width: 33%;
+  float: right;
+}
+@media (max-width: 800px) {
+  .row {
+    margin: 0 20px;
+    padding: 0;
+  }
+  .row .column {
+    float: none;
+  }
+  .row .column.two-thirds {
+    width: 100%;
+  }
+  .row .column.one-third {
+    width: 100%;
+    float: none;
+  }
+}
+
+.playerAuction {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  zoom: 1;
+  /*--------------------------------------- PLAYER AUCTION ----------------------------------------*/
+
+}
+.playerAuction:before {
+  content: '';
+  display: block;
+}
+.playerAuction:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.playerAuction h5 {
+  text-align: center;
+  font-weight: normal;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.playerAuction .archiveSelector {
+  padding: 0 0 15px;
+}
+.playerAuction .archiveSelector select {
+  margin: 0;
+  width: 150px;
+}
+.playerAuction table {
+  width:100%;
+  font-size:16px;
+  line-height:24px;
+}
+
+.playerAuction table a {
+  color: #333;
+  font-weight: bold;
+ 
+}
+.playerAuction tr {
+  background-color: #F0F0F0;
+  height:auto!important;
+}
+
+.playerAuction tr.break {
+  background-color: #F0F0F0;
+  line-height: 20px;
+  border-bottom: 100px solid white;
+}
+
+.playerAuction tr.member {
+  background-color: #F0F0F0;
+  height:auto!important;
+  line-height:30px;
+}
+.playerAuction td {
+  padding: 0 3px;
+  overflow: visible;
+  max-width:350px;
+  border-bottom: 1px solid white;
+  text-align:left;
+  font-size: 12px;  
+  z-index:1000;
+  word-wrap : break-word;
+  height:auto!important;
+}
+
+.playerAuction tr.view {
+  background-color: #F0F0F0;
+  height:auto!important;
+  line-height:30px;
+}
+
+.playerAuction tr.header td,
+.playerAuction tr.header:hover {
+  background-color: #5191CD;
+  color: #fff;
+  text-align:left;
+}
+
+.playerAuction tr.header2 td,
+.playerAuction tr.header2:hover {
+  background-color: #5191CD;
+  color: #fff;
+  text-align:left;
+  line-height:40px;
+}
+
+.playerAuction tr.header1{
+  line-height:27px;
+}
+
+.playerAuction tr.header td.last {
+text-align:right;
+padding-right: 20px;
+}
+
+.playerAuction tr.header td.recent {
+width:500px;
+}
+.playerAuction td.first {
+  text-align: left;
+  padding-left: 10px;
+}
+.playerAuction td.team {
+  text-align: left;
+}
+.playerAuction td.player,
+.playerAuction td.type {
+  text-align: left;
+}
+.playerAuction td.last {
+  padding-right: 20px;
+  text-align: right;
+}
+.playerAuction p.rules {
+  text-align: right;
+  font-size: 12px;
+  color: gray;
+  padding: 8px 0 0 0px;
+}
+.playerAuction p.rules span {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.playerAuction .playerAuctionCentralContent {
+  padding: 10px 10px 0;
+}
+.playerAuction .playerAuctionCentralContent .unitHeader {
+  margin-bottom: 0px;
+  border-bottom: 0;
+  background: #fff;
+}
+.playerAuction .playerAuctionCentralContent .unitHeader h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.playerAuction5 tr
+{
+ height:auto!important;
+
+}
+
+
+.playerAuction5 td
+{
+word-wrap : break-word;
+ max-width: 300px;
+ height:auto!important;
+ text-align : center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

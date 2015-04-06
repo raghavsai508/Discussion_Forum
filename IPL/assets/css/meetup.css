@@ -1,0 +1,101 @@
+html {
+  overflow-y:scroll;
+  font-size:100%;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+}
+
+html,
+body {
+  color:#545454;
+  color:rgba(0,0,0,0.67);
+  font-size:16px;
+  line-height:1.4;
+  font-family:"Whitney",helvetica,arial,sans-serif;
+  font-weight:400;
+  margin:0;
+  padding:0;
+}
+
+
+ul,
+ol {
+  list-style-position:outside;
+  padding-left:1.33em;
+}
+
+li {
+  margin:0;
+  padding:0;
+}
+
+
+
+button,
+input[type="submit"],
+.primary,
+.button.primary,
+.button--primary,
+input[type="submit"].primary,
+input[type="submit"].button--primary,
+.button--black,
+input[type="submit"].button--black,
+.button--white,
+.button--blue,
+input[type="submit"].button--blue,
+body .big-button,
+body .D_submit,
+body .D_submit_grad,
+body .D_submit_notheme,
+body .go,
+body .D_submit_grad_grey,
+body .meh,
+body .big-button.primary,
+body .D_submit.primary,
+body .D_submit_grad.primary,
+body .D_submit_notheme.primary,
+body .go.primary,
+body .D_submit_grad_grey.primary,
+body .meh.primary {
+  -moz-border-radius:3px 3px 3px 3px;
+  -webkit-border-radius:3px 3px 3px 3px;
+  border-radius:3px 3px 3px 3px;
+  display:inline-block;
+  zoom:1;
+  *display:inline;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  padding:9px 18px 7px 18px;
+  margin:0 0 18px 0;
+  font-family:"Whitney",helvetica,arial,sans-serif;
+  font-weight:700;
+  font-size:16px;
+  line-height:1 !important;
+  text-decoration:none !important;
+  border-width:0;
+  text-align:center;
+  -webkit-transition:none;
+  -moz-transition:none;
+  -ms-transition:none;
+  -o-transition:none;
+  transition:none;
+  -moz-text-shadow:none;
+  -webkit-text-shadow:none;
+  -ms-text-shadow:none;
+  -o-text-shadow:none;
+  text-shadow:none;
+}
+
+.button,
+button,
+input[type="submit"] {
+  color:rgba(0,0,0,0.67) !important;
+  background:rgba(0,0,0,0.1);
+  -moz-box-shadow:rgba(0,0,0,0.47) 0 2px 0 0;
+  -webkit-box-shadow:rgba(0,0,0,0.47) 0 2px 0 0;
+  -o-box-shadow:rgba(0,0,0,0.47) 0 2px 0 0;
+  box-shadow:rgba(0,0,0,0.47) 0 2px 0 0;
+}
+
+

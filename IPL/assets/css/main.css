@@ -1,0 +1,280 @@
+/*---------------------------------------- GLOBAL -------------------------------------------*/
+
+.bcciGlobal {
+	height: 35px;
+	position: relative;
+	background-color:#1c1d22;
+	z-index: 20;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.bcciGlobalContent {
+margin: 0 auto;
+width: 980px;
+position: relative;
+
+}
+
+.bcciGlobalRight {
+	float: right;
+}
+.sign-in
+{
+float: right;
+margin: 8px 7px 0 0;
+opacity: 1;
+position: relative;
+}
+
+/*--------------------------------------- SEARCH ----------------------------------------*/
+
+.search{
+float: right;
+margin: 5px 0 0 0;
+opacity: 1;
+position: relative;
+border: 1px solid rgba(0, 0, 0, 0.5);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+display: block;
+}
+
+.search #search-form {
+
+}
+
+.search #search-form #search-query {
+border: 1px solid transparent;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+font: 13px Arial,sans-serif;
+width: 170px;
+padding: 3px 25px 3px 6px;
+color: #fff;
+background: #363636;
+outline: 0;
+}
+
+
+
+
+/*--------------------------------------- CSS TRANSITIONS ----------------------------------------*/
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeIn { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeIn { from { opacity:1; } to { opacity:0; } }
+
+.fadeOut {
+    opacity:1;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+
+}
+
+.fadeOut.one {
+ -webkit-animation-duration:3s;
+    -moz-animation-duration:3s;
+    animation-duration:3s;
+  
+}
+ 
+.fadeOut.two {
+  -webkit-animation-duration:1.5s;
+    -moz-animation-duration:1.5s;
+    animation-duration:1.5s;
+}
+
+@-webkit-keyframes zIndex { from { z-index:5; } to { opacity:0; } }
+@-moz-keyframes zIndex { from { z-index:5; } to { opacity:0; } }
+@keyframes zIndex { from { z-index:5; } to { opacity:0; } }
+
+.fadeoutZIndex {
+    opacity:1;  /* make things invisible upon start */
+    -webkit-animation:zIndex ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:zIndex ease-in 1;
+    animation:zIndex ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+
+}
+@-webkit-keyframes bounceVideo {
+    0% { opacity: 0; -webkit-transform: translateX(800px); }
+    60% { opacity: 1; -webkit-transform: translateX(-25px); }
+    80% { -webkit-transform: translateX(8px); opacity: 1; }
+    100% { -webkit-transform: translateX(0); opacity: 1; }
+}
+
+.bounceVideoHero {
+    -webkit-animation: bounceVideo 2s ease-in-out;
+	
+}
+
+/*--------------------------------------- CONTAINERS ----------------------------------------*/
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+	width:980px;
+  padding: 0;
+}
+
+/*--------------------------------------- MASTHEAD ----------------------------------------*/
+
+.masthead {
+position: relative;
+z-index: 3;
+color: white;
+background-image: url(../img/bk.jpg);
+width: 100%;
+background-repeat: repeat;
+background-position: top;
+border-top: 1px solid #304d95;
+z-index: 10;
+}
+
+.mastheadContent {
+position: relative;
+height: 120px;
+}
+
+.mastheadContent .wrapper {
+height: 84px;
+}
+
+
+.mastheadContent .primaryMenu {
+  position: relative;
+}
+
+.mastheadContent .primaryMenu .wrapper {
+  height: auto;
+}
+
+.masthead .primaryMenu{
+  margin: 0;
+line-height: 36px;
+height: 36px;
+font-size: 16px;
+width: 100%;
+background: #00528f;
+background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*--------------------------------------- MAIN MENU ----------------------------------------*/
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.masthead-menu li{
+float:left;
+}
+
+.masthead-menu li.right{
+float:right;
+border: 0;
+padding: 0 12px;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+vertical-align: top;
+color: white;
+display: inline-block;
+margin-right: 0;
+text-shadow: #242424 0px 1px 1px;
+text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
+text-transform: uppercase;
+}
+
+
+.masthead-menu li a{
+float: none;
+border: 0;
+padding: 0 12px;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+vertical-align: top;
+color: white;
+display: inline-block;
+margin-right: 0;
+text-shadow: #242424 0px 1px 1px;
+text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
+text-transform: uppercase;
+
+}
+
+.masthead-menu li:hover a {
+background-color: #586fa9;
+}
+
+
+.masthead-menu li a.dropDown {
+  background-color: #1c1d22;
+}
+
+.masthead-menu li.selected a {
+  color: #222;
+  background-color: #A8BED5;
+  text-shadow: none;
+}
+
+
+
+/*--------------------------------------- HERO STRUCTURE ----------------------------------------*/
+
+.hero {
+position: relative;
+margin-top: 0px;
+width: 980px;
+height:100%;
+overflow: auto;
+}
+
+.hero .heroContent {
+background: #fff;
+box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+z-index: 2;
+position: relative;
+height: 100%;
+width: 980px;
+ overflow: auto; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

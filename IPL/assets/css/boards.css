@@ -1,0 +1,471 @@
+.bbeditor-toolbar {
+  margin-bottom:3px;
+  position:relative;
+  height:24px;
+  z-index:1;
+}
+
+.bbeditor-toolbar-items {
+  margin:0;
+  padding:0;
+}
+
+.bbeditor-toolbar-item {
+  position:relative;
+  min-width:21px;
+  height:21px;
+  float:left;
+  list-style-type:none;
+  cursor:pointer;
+  margin-right:3px;
+  padding:1px;
+  z-index:1000;
+  background:#ddd url(//img2.meetupstatic.com/img/toolbar/button-bg.gif) no-repeat 0 0;
+  -moz-border-radius:5px 5px 5px 5px;
+  -webkit-border-radius:5px 5px 5px 5px;
+  border-radius:5px 5px 5px 5px;
+}
+
+.bbeditor-toolbar-item.active {
+  background:url(//img2.meetupstatic.com/img/toolbar/big-button-bg.gif) repeat-x 0 0;
+  -moz-border-radius:5px 5px 0 0;
+  -webkit-border-radius:5px 5px 0 0;
+  border-radius:5px 5px 0 0;
+  z-index:10000;
+}
+
+.bbeditor-text-button {
+  height:14px;
+  color:#000;
+  font-size:10px;
+  padding:0 5px;
+  width:auto;
+  position:relative;
+  top:3px;
+}
+
+.bbeditor-menu {
+  width:200px;
+  position:absolute;
+  top:22px;
+  left:0;
+  width:160px;
+  padding:8px;
+  display:none;
+  background:#E7F1FE;
+  border-right:1px solid #999;
+  border-bottom:1px solid #999;
+  -moz-border-radius:0 5px 5px 5px;
+  -webkit-border-radius:0 5px 5px 5px;
+  border-radius:0 5px 5px 5px;
+}
+
+.bbeditor-menu-fancyImage {
+  width:220px;
+}
+
+.bbeditor-menu-footer {
+  margin-top:6px;
+  padding-top:6px;
+  clear:both;
+  border-top:1px solid #999;
+}
+
+.bbeditor-menu .D_submit {
+  margin-right:8px;
+}
+
+.bbeditor-smiley-list {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  list-style:none;
+}
+
+.bbeditor-smiley-list li {
+  float:left;
+  margin:4px;
+}
+
+.bbeditor-colorswatch-list {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  list-style:none;
+}
+
+.bbeditor-colorswatch-list li {
+  padding:0;
+  width:13px;
+  height:13px;
+  margin:0 0.5em 0.5em 0;
+  float:left;
+  border:1px solid #ccc;
+  cursor:pointer;
+}
+
+.bbeditor-menu-video {
+  width:260px;
+}
+
+.bbeditor-menu-video textarea {
+  width:254px;
+  height:70px;
+  margin-bottom:8px;
+}
+
+.bbeditor-img-url,
+.bbeditor-img-link-url,
+.bbeditor-link-address,
+.bbeditor-link-text {
+  width:154px;
+}
+
+.bb-linkitems {
+  margin-left:20px;
+  max-height:150px;
+  overflow:auto;
+}
+
+.button-container .sprite_action.minus {
+  background:url("//img2.meetupstatic.com/img/minus.png") no-repeat 4px center;
+}
+
+.button-container .sprite_action.plus {
+  background:url("//img2.meetupstatic.com/img/plus.png") no-repeat 4px center;
+}
+
+.thread .messageTopic {
+  font-weight:bold;
+}
+
+.thread .postPager .messageTopic {
+  font-weight:normal;
+}
+
+.boardActions {
+  margin:6px 0;
+}
+
+table.D_boardThread {
+  font-size:13px;
+  
+}
+
+table.D_boardThread tr td {
+  padding:.5em;
+  vertical-align:top;
+}
+
+table.D_boardThread tbody tr.D_header td {
+  padding-bottom:.25em;
+  background-color:#19398A;
+  background-color:#EbF3FC;
+  border-top:1px solid #ccc !important;
+  vertical-align:middle;
+}
+
+table.D_boardThread tbody tr.D_header td.D_member {
+  width:15%;
+  font-weight:bold;
+}
+
+table.D_boardThread tbody tr.D_body td {
+  padding:1em;
+
+}
+
+table.D_boardThread tbody tr.D_body td.D_member {
+  font-size:.9em;
+}
+
+table.D_boardThread tbody tr td.D_member {
+  border-right:1px solid #ccc;
+  text-align:center;
+}
+
+img.D_icon {
+  vertical-align:middle;
+}
+
+.boardThreadFooter {
+  border-top:1px solid #ccc;
+  padding-top:.5em;
+  margin-top:1em;
+}
+
+.boardShout {
+  padding-left:.4em;
+}
+
+.boardShout .D_icon {
+  margin-bottom:-5px;
+}
+
+.D_bbcode {
+  overflow-y:scroll;
+}
+
+.D_bbcode blockquote {
+  background-color:#eee;
+  border-bottom:1px solid #bbb;
+  margin:0.5em 1em;
+  padding:.75em;
+  font-style:italic;
+  color:#333;
+}
+
+.D_boardThread .D_bbcode img {
+  max-width:450px;
+}
+
+.D_subject .fixImg img,
+.forumTable .description img {
+  max-width:350px;
+}
+
+.bdMsgBody .D_bbcode,
+.D_boardPostActions {
+  max-width:580px;
+  overflow:hidden;
+}
+
+.D_boardThread .D_bbcode pre {
+  overflow:auto;
+}
+
+.userSearchForm {
+  text-align:right;
+  float:right;
+}
+
+.userSearchForm #keywords {
+  width:13em;
+}
+
+.threadlistActions {
+  float:left;
+  width:59%;
+}
+
+.crumb {
+  font-size:.9em;
+  margin:0 0 1em 0 !important;
+  color:#333;
+}
+
+.crumb span {
+  white-space:nowrap;
+}
+
+.crumb a:hover {
+  color:#2175B1;
+}
+
+.postInfoText {
+  font-size:.9em;
+  color:#999;
+  font-style:italic;
+  margin-top:1em;
+}
+
+.memberName,
+.postPager {
+  font-size:.9em;
+}
+
+.D_moderator {
+  display:inline-block;
+  zoom:1;
+  *display:inline;
+  padding:2px;
+  font-style:normal;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size:7px;
+  line-height:1em;
+  border-radius:2px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  margin:2px 0;
+  color:#fff;
+}
+
+.D_meetupHQ {
+  background:#b32624;
+}
+
+.D_volunteerMod {
+  background:#ff6501;
+}
+
+ul.fakeOL {
+  list-style-position:inside;
+}
+
+ul.fakeOL li {
+  list-style-type:decimal;
+  list-style-position:inside;
+}
+
+.report-content .D_dropdownContent {
+  border-color:#eee;
+  background:#EBF3FC;
+}
+
+.report-content .sprite_action_right_new {
+  padding-right:20px;
+}
+
+.note .content {
+  margin-right:0;
+}
+
+#D_forumDisplay .forumTable .imgBullet {
+  padding:0.75em 0.25em 0 0.25em;
+}
+
+#D_forumDisplay .forumTable .imgBullet .pictureFrame {
+  position:relative;
+  display:block;
+  margin:0 0 0.75em 0;
+  padding:0;
+}
+
+#D_forumDisplay .forumTable .imgBullet .pictureFrame .forumUnread {
+  position:absolute;
+  right:-1px;
+  top:24px;
+}
+
+#D_forumDisplay .discussion .title {
+  float:left;
+  width:100%;
+  overflow:hidden;
+}
+
+#D_forumDisplay .discussion .title h3 {
+  float:left;
+  clear:left;
+  margin:0;
+  width:100%;
+}
+
+#D_forumDisplay .forumTable .discussion .D_actions {
+  float:left;
+}
+
+#D_forumDisplay .discussion .accessLevelDisplay {
+  font-size:10px;
+  font-weight:bold;
+}
+
+#D_forumDisplay .discussion .accessLevelDisplay .everybody,
+#D_forumDisplay .discussion .accessLevelDisplay .groupOnly,
+#D_forumDisplay .discussion .accessLevelDisplay .orgOnly {
+  background:#D6693A;
+  color:#fff;
+  font-weight:bold;
+  padding:0 5px;
+}
+
+#D_forumDisplay .discussion .accessLevelDisplay .everybody,
+#D_forumDisplay .discussion .accessLevelDisplay .groupOnly,
+#D_forumDisplay .discussion .accessLevelDisplay .orgOnly {
+  background:#D6693A;
+}
+
+#D_threadDisplay .mainContent {
+  position:relative;
+}
+
+#D_threadDisplay .D_threadHeader {
+  font-size:.9em;
+}
+
+#D_threadDisplay .D_threadHeader select {
+  background:#fff;
+}
+
+#D_threadDisplay .D_searchBar {
+  position:absolute;
+  right:1.25em;
+  top:0;
+  margin-top:.5em;
+}
+
+#J_threadConfirmDelete p {
+  text-align:center;
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+#J_threadConfirmDelete input {
+  margin:0 1em;
+  width:3.5em;
+}
+
+#D_threadDisplay .D_threadActions option {
+  padding-left:16px;
+  margin-left:4px;
+  background-color:transparent;
+  background-attachment:scroll;
+  background-position:top left;
+  background-repeat:no-repeat;
+}
+
+#D_threadDisplay tr.thread .checkColumn {
+  padding-left:0;
+  padding-right:0;
+}
+
+#D_threadDisplay tr.thread .D_statusIcons {
+  white-space:nowrap;
+  margin-bottom:.25em;
+}
+
+#D_threadDisplay tr.thread .D_statusIcons img {
+  margin:2px;
+}
+
+#D_threadDisplay tr.thread.highlight {
+  background-color:#ffe;
+}
+
+#D_threadDisplay .D_pager {
+  border:0;
+}
+
+#D_threadDisplay div.goRight .D_pager {
+  float:right;
+  margin-bottom:.5em;
+}
+
+#D_threadDisplay div.goRight .D_pager ul {
+  padding:0 0.5em;
+  width:auto;
+}
+
+#D_threadDisplay .footer .D_pager {
+  float:none;
+  width:100%;
+  text-align:center;
+}
+
+div.mvnForum {
+  padding-top:1em;
+  font-size:.9em;
+  text-align:right;
+}
+
+.D_sortedDesc .D_selected {
+  padding-right:12px;
+  background:url("/img/7648487429011416/arrow_down.gif") no-repeat right;
+  color:#2380cf !important;
+}
+
+.D_sortedAsc .D_selected {
+  padding-right:12px;
+  background:url("/img/68303913898350203/arrow_up.gif") no-repeat right;
+  color:#2380cf !important;
+}
